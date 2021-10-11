@@ -1,34 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-default bg-default shadow-sm">
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-            <div class="container">
+<div class="container">                  
+
+            
                 <a class="navbar-brand " href="{{ url('/') }}">
-               <h4> Emart</h4>
+               <h6><span class="fa fa-mobile"></span>  Hotline: (+011) 444 555</h6>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav  ">
-                    
-                    
-                    
-                    </ul>
-                    </div>
+                   
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                    <li class="nav nav-item">
+                    <li class="nav menu-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                                
                     </li>
                     <li class="nav-item ">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link " href="#">Shop</a>
                     </li>
-                    <li class="nav-item ">
-                    <a class="nav-link" href="#">Cart</a>
-                    </li>
+                   
                     
                         <!-- Authentication Links -->
                         @guest
@@ -36,8 +31,7 @@
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <li class="nav-item">                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -64,9 +58,9 @@
                     <a class="nav-link" href="#">Contact us</a>
                     </li>
                     </ul>
-                </div>
-            </div>
-
-        </nav>
-</br>
+                </div>                  
+            </div>      
+        </div>
+</nav>
+                  
        
