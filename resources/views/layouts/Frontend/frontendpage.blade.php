@@ -13,6 +13,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" ></script>
+    <script src="{{ asset('js/jquery-3.6.0.js') }}" ></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}" ></script>
+   <script src="{{ asset('js/jquery.countdown.min.js') }}" ></script>
+   <script src="{{ asset('js/functions.js') }}" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
@@ -27,6 +32,8 @@
     <link href="{{ asset('css/style1.css') }}" rel="stylesheet">
     <link href="{{ asset('css/color-01.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
   
 </head>
@@ -34,14 +41,14 @@
 <body>
 @include('layouts.Frontend.nav')
 
-<div class= "header">
-    
-    @yield('header')
-
-</div>
-   <div class= "content">
+<div class= "content">
     
      @yield('content')
+
+</div>
+<div >
+    
+     @yield('scripts')
 
 </div>
 @include('layouts.Frontend.footer') 

@@ -36,7 +36,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                    
-                    <li class="nav-item">
+                    <li class="ic">
                             Emart
                             </li>
                     </ul>

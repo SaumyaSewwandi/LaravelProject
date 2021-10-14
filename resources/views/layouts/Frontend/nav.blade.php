@@ -17,12 +17,19 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                     <li class="nav menu-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                                
                     </li>
-                    <li class="nav-item ">
-                    <a class="nav-link " href="#">Shop</a>
-                    </li>
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Category
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						@foreach($categorylist as $category)
+						<a class="dropdown-item" href="selectcategory?category_id={{$category->id}}">{{$category->name}}</a>
+						@endforeach
+						
+				</li>
                    
                     
                         <!-- Authentication Links -->
@@ -62,5 +69,64 @@
             </div>      
         </div>
 </nav>
+
+<header  class="header header-style-1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="topbar-menu-area">
+					<div class="container">
+					<div class="mid-section main-info-area">
+
+						<div class="wrap-logo-top left-section">
+							<a href="index.html" class="link-to-home"><img src="assets/img/logo-top-1.png" alt="mercado"></a>
+						</div>
+
+						<div class="wrap-search center-section">
+							<div class="wrap-search-form">
+								<form method="POST" action="searchdata" id="form-search-top" name="form-search-top" >
+								@csrf
+									<input type="text" name="search" value="" placeholder="Search here...">
+									<button form="form-search-top" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+								
+								</form>
+							</div>
+						</div>
+						<div class="wrap-icon right-section">
+							<div class="wrap-icon-section wishlist">
+								<a href="#" class="link-direction">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									<div class="left-info">
+										<span class="index">0 item</span>
+										<span class="title">Wishlist</span>
+									</div>
+								</a>
+							</div>
+							<div class="wrap-icon-section minicart">
+								<a href="shopingcart" class="link-direction">
+									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+									<div class="left-info">
+										<span class="index">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }} items</span>
+										<span class="title">CART</span>
+									</div>
+								</a>
+							</div>
+							
+				</div>
+				
+
+				
+            </div>
+          
+		</div>
+        
+	</header>
+	
+ <div class="row ">
+ 	<div class="wrap-show-advance-info-box ">
+	 
+   <marquee class="title-box" direction ="left"  scrollamount="8" behavior="alternate" > Welcome to Emart , Emart is the Best Online plateform to buy products as you like...</marquee>
+
+		</div>
+	</div>
                   
        

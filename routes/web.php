@@ -35,3 +35,13 @@ Route::get('editproduct','Dashboard@editproductpage')->name('editproductpage');
 //Route::get('editproduct', 'Dashboard@editproductpagecat')->name('editproductpagecat');
 Route::post('updateproduct','Dashboard@updateproduct')->name('updateproduct');
 Route::get('deleteproduct','Dashboard@deleteproduct')->name('deleteproduct');
+
+
+Route::get('detail','Frontend@detailpage')->name('detailpage');
+Route::get('selectcategory','Frontend@index')->name('index');
+Route::post('searchdata','Frontend@searchdata')->name('searchdata');
+
+Route::get('cart','cartcontroller@cartpage')->name('cartpage');
+Route::get('shopingcart','cartcontroller@getCart')->name('getCart');
+Route::get('getReduceByOne','cartcontroller@getReduceByOne')->name('getCartgetReduceByOne');
+Route::get('getRemoveItem','cartcontroller@getRemoveItem')->name('getRemoveItem');

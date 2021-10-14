@@ -140,7 +140,7 @@
 <br><br>
 			<div class="coppy-right-box">
 				<div class="container">
-					<div class="coppy-right-item item-left">
+					<div class="coppy-right-item ">
 						<p class="coppy-right-text"> © 2021. All rights reserved | Design by: Saumya Sewwandi</p>
 					</div>
 					

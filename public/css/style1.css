@@ -9,6 +9,15 @@ img{
 	max-width: 100%;
     height: auto;
 }
+li{
+    text-decoration: none;
+}
+.nv.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #1005db;
+  border-color: #dee2e6 #14ce1d #f8fafc;
+}
 input:focus{
    outline: none;
 }
@@ -2139,11 +2148,13 @@ li.menu-item .nav-label.sale-label::before{
 }
 .coppy-right-box {
     background: #2d2d2d;
+
 }
 .coppy-right-box .coppy-right-item{
     display: inline-block;
     float: left;
     padding: 12px 0;
+    
 }
 .coppy-right-box .coppy-right-item.item-right{
     float: right;
@@ -4710,6 +4721,7 @@ table.shop_attributes tbody{
 .widget-our-services .service{
     padding: 16px 0;
     margin-bottom: 13px;
+ 
 }
 .widget-our-services .service:not(:last-child){
     border-bottom: 1px solid #e6e6e6;
@@ -4718,11 +4730,14 @@ table.shop_attributes tbody{
     margin-bottom: 12px;
 }
 .widget-our-services .service a{
+    text-decoration: none;
     display: table;
     font-size: 14px;
     line-height: 20px;
+
 }
 .widget-our-services .service a>i{
+    text-decoration: none;
     font-size: 40px;
     line-height: 20px;
     display: table-cell;
