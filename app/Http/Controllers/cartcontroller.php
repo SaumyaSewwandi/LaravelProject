@@ -25,8 +25,10 @@ class cartcontroller extends Controller
 
     public function getCart() {
         if (!Session::has('cart')) {
-            return view('layouts.Frontend.cart');
+            $categorylist=category::all();
+            return view('layouts.Frontend.cart',compact('categorylist'));
         }
+
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
         $categorylist=category::all();
